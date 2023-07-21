@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/eletric_car"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/tv_tap_carros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carros"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_tap_favoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/favoritos"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/tv_tap_carros"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo" />
+
+    <ImageView
+        android:id="@+id/iv_imageCar"
+        android:layout_width="250dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/imagecar"
+        android:padding="-10dp"
+        android:src="@drawable/eletric_car"
+        app:layout_constraintLeft_toLeftOf="@id/tv_titulo"
+        app:layout_constraintTop_toBottomOf="@id/tv_tap_carros" />
+
+    <TextView
+        android:id="@+id/tv_preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preco"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_imageCar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="30dp"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/tv_ValorPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/r_300_000_00"
+        app:layout_constraintTop_toBottomOf="@id/iv_imageCar"
+        app:layout_constraintLeft_toRightOf="@id/tv_preco"
+        android:layout_marginStart="45dp"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/tv_bateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bateria"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_preco"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="30dp"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/tv_CapacidadeBateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kWh"
+        app:layout_constraintTop_toBottomOf="@id/tv_ValorPreco"
+        app:layout_constraintLeft_toRightOf="@id/tv_preco"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_potencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/potencia"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_bateria"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="30dp"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/tv_CavalosPotencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cv"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_CapacidadeBateria"
+        app:layout_constraintLeft_toRightOf="@id/tv_preco"
+        android:layout_marginStart="45dp"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/tv_recarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recarga"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_potencia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="30dp"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/tv_TempoRecarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/min"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_CavalosPotencia"
+        app:layout_constraintLeft_toRightOf="@id/tv_preco"
+        android:layout_marginStart="45dp"
+        android:textSize="17sp"/>
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_TempoRecarga"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
