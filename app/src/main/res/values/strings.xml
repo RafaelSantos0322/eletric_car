@@ -15,5 +15,5 @@
     <string name="preco_kwh">Preço kWh</string>
     <string name="capacidade_bateria">Capacidade da Bateria</string>
     <string name="calcular">Calcular</string>
-    <string name="custo_por_recarga">Custo Por Recarga Completa</string>
+    <string name="custo_por_recarga">Recarga Completa</string>
 </resources>
